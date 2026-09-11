@@ -416,5 +416,98 @@
     <script src="config.js"></script>
     <script src="main.js"></script>
     <script src="js/contact.js"></script>
+
+
+    <script>
+// Auto-fill template from URL parameter
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const template = urlParams.get('template');
+    
+    if (template) {
+        // Show selected template notification
+        const notification = document.createElement('div');
+        notification.className = 'template-notification';
+        notification.innerHTML = `
+            <div class="notification-content">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>You're interested in: <strong>${formatTemplateName(template)}</strong></span>
+            </div>
+        `;
+        
+        const contactForm = document.querySelector('.contact-form-wrapper');
+        if (contactForm) {
+            contactForm.insertBefore(notification, contactForm.firstChild);
+        }
+        
+        // Pre-fill template field if it exists
+        const templateField = document.getElementById('template');
+        if (templateField) {
+            templateField.value = template;
+        }
+        
+        // Add to message
+        const messageField = document.getElementById('message');
+        if (messageField && !messageField.value) {
+            messageField.value = `I'm interested in the ${formatTemplateName(template)} template.`;
+        }
+    }
+    
+    function formatTemplateName(template) {
+        const names = {
+            'nexus': 'NEXUS (Gaming)',
+            'vintage': 'VINTAGE (Business)',
+            'lumiere': 'LUMIÈRE (Restaurant)',
+            'nova': 'NOVA (Startup)',
+            'aura': 'AURA (Portfolio)',
+            'pulse': 'PULSE (SaaS)'
+        };
+        return names[template] || template.toUpperCase();
+    }
+})();
+</script>
+
+<style>
+.template-notification {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(139, 92, 255, 0.1), rgba(166, 108, 255, 0.1));
+    border: 1px solid #8B5CFF;
+    border-radius: 12px;
+    animation: slideDown 0.5s ease;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #F7F4FF;
+}
+
+.notification-content svg {
+    width: 24px;
+    height: 24px;
+    color: #8B5CFF;
+    flex-shrink: 0;
+}
+
+.notification-content strong {
+    color: #A66CFF;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+    
 </body>
 </html>
