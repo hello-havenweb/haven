@@ -3,69 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templates — HAVEN</title>
-    <meta name="description" content="Choose from professionally designed website templates by HAVEN. Start with a polished foundation and customize it around your business.">
+    <title>Website Templates — HAVEN</title>
+    <meta name="description" content="Browse premium website templates by HAVEN. Fully customizable designs for gaming, business, restaurants, startups, and more.">
     
-    <!-- Fonts -->
+    <link rel="canonical" href="https://haven.pntr.dev/templates.html">
+    
+    <meta property="og:title" content="Premium Website Templates — HAVEN">
+    <meta property="og:description" content="Choose from professionally designed website templates, fully customizable for your business.">
+    <meta property="og:url" content="https://haven.pntr.dev/templates.html">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <div class="header-logo">
-                    <a href="/" class="logo">HAVEN</a>
+                    <a href="index.html" class="logo" aria-label="HAVEN Home">
+                        <span class="logo-text">HAVEN</span>
+                    </a>
                 </div>
                 
-                <nav class="nav" id="nav">
+                <nav class="nav" id="nav" aria-label="Main navigation">
                     <ul class="nav-list">
-                        <li><a href="/" class="nav-link">Home</a></li>
-                        <li><a href="/services.html" class="nav-link">Services</a></li>
-                        <li><a href="/templates.html" class="nav-link active">Templates</a></li>
-                        <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
-                        <li><a href="/about.html" class="nav-link">About</a></li>
-                        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="templates.html" class="nav-link active">Templates</a></li>
+                        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
                 
                 <div class="header-cta">
-                    <a href="/contact.html" class="btn btn-primary">Start a Project</a>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
                 </div>
                 
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
                     <span class="hamburger"></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-content">
             <nav class="mobile-nav">
                 <ul class="mobile-nav-list">
-                    <li><a href="/" class="mobile-nav-link">Home</a></li>
-                    <li><a href="/services.html" class="mobile-nav-link">Services</a></li>
-                    <li><a href="/templates.html" class="mobile-nav-link">Templates</a></li>
-                    <li><a href="/pricing.html" class="mobile-nav-link">Pricing</a></li>
-                    <li><a href="/about.html" class="mobile-nav-link">About</a></li>
-                    <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="templates.html" class="mobile-nav-link">Templates</a></li>
+                    <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-cta">
-                <a href="/contact.html" class="btn btn-primary btn-block">Start a Project</a>
+                <a href="contact.html" class="btn btn-primary btn-block">Get Started</a>
             </div>
         </div>
     </div>
 
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="hero-background">
             <div class="hero-gradient hero-gradient-1"></div>
@@ -74,288 +79,362 @@
         
         <div class="container">
             <div class="page-hero-content" data-animate="fade-up">
-                <div class="page-eyebrow">Professional Website Templates</div>
-                <h1 class="page-title">Start with a template. Make it yours.</h1>
+                <div class="page-eyebrow">Premium Website Templates</div>
+                <h1 class="page-title">Choose Your Starting Point</h1>
                 <p class="page-description">
-                    Choose a polished starting point and customize it around your business.
+                    Professionally designed websites, fully customizable for your business. Select a template and we'll transform it into your unique digital presence.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Template Filter -->
     <section class="template-filter section-small">
         <div class="container">
-            <div class="filter-tabs" id="filterTabs">
-                <button class="filter-tab active" data-category="all">All</button>
-                <button class="filter-tab" data-category="business">Business</button>
-                <button class="filter-tab" data-category="portfolio">Portfolio</button>
-                <button class="filter-tab" data-category="agency">Agency</button>
-                <button class="filter-tab" data-category="restaurant">Restaurant</button>
-                <button class="filter-tab" data-category="saas">SaaS</button>
-                <button class="filter-tab" data-category="personal">Personal Brand</button>
-                <button class="filter-tab" data-category="creative">Creative</button>
-                <button class="filter-tab" data-category="ecommerce">E-commerce</button>
+            <div class="filter-tabs" id="filterTabs" role="tablist" aria-label="Template categories">
+                <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All Templates</button>
+                <button class="filter-tab" data-category="business" role="tab" aria-selected="false">Business</button>
+                <button class="filter-tab" data-category="gaming" role="tab" aria-selected="false">Gaming</button>
+                <button class="filter-tab" data-category="restaurant" role="tab" aria-selected="false">Restaurant</button>
+                <button class="filter-tab" data-category="startup" role="tab" aria-selected="false">Startup</button>
+                <button class="filter-tab" data-category="saas" role="tab" aria-selected="false">SaaS</button>
+                <button class="filter-tab" data-category="portfolio" role="tab" aria-selected="false">Portfolio</button>
+                <button class="filter-tab" data-category="ecommerce" role="tab" aria-selected="false">E-commerce</button>
             </div>
         </div>
     </section>
 
-    <!-- Templates Grid -->
-    <section class="templates-grid section">
+    <section class="templates-section section">
         <div class="container">
-            <div class="templates-container" id="templatesContainer">
-                <div class="template-card" data-category="business" data-animate="fade-up">
-                    <div class="template-image">
-                        <div class="template-preview business-template"></div>
-                    </div>
-                    <div class="template-content">
-                        <div class="template-category">Business</div>
-                        <h3 class="template-title">HAVEN Business</h3>
-                        <p class="template-description">
-                            Professional business website template with service pages, contact forms, and modern design.
-                        </p>
-                        <div class="template-actions">
-                            <a href="/contact.html?template=haven-business" class="btn btn-primary btn-small">Use This Template</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="templates-grid" id="templatesGrid">
                 
-                <div class="template-card" data-category="portfolio" data-animate="fade-up" data-delay="100">
+                <!-- NEXUS - Gaming Template -->
+                <article class="template-card" data-category="gaming" data-animate="fade-up">
                     <div class="template-image">
-                        <div class="template-preview portfolio-template"></div>
-                    </div>
-                    <div class="template-content">
-                        <div class="template-category">Portfolio</div>
-                        <h3 class="template-title">Northline</h3>
-                        <p class="template-description">
-                            Clean portfolio template with project showcase, about section, and contact integration.
-                        </p>
-                        <div class="template-actions">
-                            <a href="/contact.html?template=northline" class="btn btn-primary btn-small">Use This Template</a>
+                        <div class="template-preview nexus-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/nexus/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="agency" data-animate="fade-up" data-delay="200">
-                    <div class="template-image">
-                        <div class="template-preview agency-template"></div>
-                    </div>
                     <div class="template-content">
-                        <div class="template-category">Agency</div>
-                        <h3 class="template-title">Forma</h3>
+                        <div class="template-header">
+                            <span class="template-category">Gaming</span>
+                            <h3 class="template-title">NEXUS</h3>
+                        </div>
                         <p class="template-description">
-                            Modern agency template with service presentation, case studies, and team profiles.
+                            Futuristic gaming website with immersive design, perfect for gaming brands, esports teams, and gaming communities.
                         </p>
+                        <div class="template-features">
+                            <span class="template-feature">Responsive</span>
+                            <span class="template-feature">Modern UI</span>
+                            <span class="template-feature">Animations</span>
+                        </div>
                         <div class="template-actions">
-                            <a href="/contact.html?template=forma" class="btn btn-primary btn-small">Use This Template</a>
+                            <a href="templates/nexus/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=nexus" class="btn btn-primary btn-small">Get This Website</a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="saas" data-animate="fade-up">
+                </article>
+
+                <!-- VANTAGE - Business Template -->
+                <article class="template-card" data-category="business" data-animate="fade-up" data-delay="100">
                     <div class="template-image">
-                        <div class="template-preview saas-template"></div>
-                    </div>
-                    <div class="template-content">
-                        <div class="template-category">SaaS</div>
-                        <h3 class="template-title">Luma</h3>
-                        <p class="template-description">
-                            SaaS-focused template with feature sections, pricing tables, and conversion design.
-                        </p>
-                        <div class="template-actions">
-                            <a href="/contact.html?template=luma" class="btn btn-primary btn-small">Use This Template</a>
+                        <div class="template-preview vantage-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/vantage/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="creative" data-animate="fade-up" data-delay="100">
-                    <div class="template-image">
-                        <div class="template-preview creative-template"></div>
-                    </div>
                     <div class="template-content">
-                        <div class="template-category">Creative</div>
-                        <h3 class="template-title">Atelier</h3>
+                        <div class="template-header">
+                            <span class="template-category">Business</span>
+                            <h3 class="template-title">VANTAGE</h3>
+                        </div>
                         <p class="template-description">
-                            Creative studio template with bold typography and editorial layout design.
+                            Professional business website with clean design, ideal for corporate companies, consultancies, and professional services.
                         </p>
+                        <div class="template-features">
+                            <span class="template-feature">Professional</span>
+                            <span class="template-feature">Clean</span>
+                            <span class="template-feature">Trustworthy</span>
+                        </div>
                         <div class="template-actions">
-                            <a href="/contact.html?template=atelier" class="btn btn-primary btn-small">Use This Template</a>
+                            <a href="templates/vantage/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=vantage" class="btn btn-primary btn-small">Get This Website</a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="restaurant" data-animate="fade-up" data-delay="200">
+                </article>
+
+                <!-- LUMIÈRE - Restaurant Template -->
+                <article class="template-card" data-category="restaurant" data-animate="fade-up" data-delay="200">
                     <div class="template-image">
-                        <div class="template-preview restaurant-template"></div>
-                    </div>
-                    <div class="template-content">
-                        <div class="template-category">Restaurant</div>
-                        <h3 class="template-title">Table & Co.</h3>
-                        <p class="template-description">
-                            Restaurant template with menu presentation, reservation system, and location details.
-                        </p>
-                        <div class="template-actions">
-                            <a href="/contact.html?template=table-co" class="btn btn-primary btn-small">Use This Template</a>
+                        <div class="template-preview lumiere-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/lumiere/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="saas" data-animate="fade-up">
-                    <div class="template-image">
-                        <div class="template-preview vertex-template"></div>
-                    </div>
                     <div class="template-content">
-                        <div class="template-category">SaaS</div>
-                        <h3 class="template-title">Vertex</h3>
+                        <div class="template-header">
+                            <span class="template-category">Restaurant</span>
+                            <h3 class="template-title">LUMIÈRE</h3>
+                        </div>
                         <p class="template-description">
-                            Tech-focused SaaS template with integrations showcase and product demonstration.
+                            Elegant restaurant website with sophisticated design, perfect for fine dining, cafes, and culinary establishments.
                         </p>
+                        <div class="template-features">
+                            <span class="template-feature">Elegant</span>
+                            <span class="template-feature">Menu Display</span>
+                            <span class="template-feature">Reservations</span>
+                        </div>
                         <div class="template-actions">
-                            <a href="/contact.html?template=vertex" class="btn btn-primary btn-small">Use This Template</a>
+                            <a href="templates/lumiere/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=lumiere" class="btn btn-primary btn-small">Get This Website</a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="personal" data-animate="fade-up" data-delay="100">
+                </article>
+
+                <!-- NOVA - Startup Template -->
+                <article class="template-card" data-category="startup" data-animate="fade-up">
                     <div class="template-image">
-                        <div class="template-preview personal-template"></div>
-                    </div>
-                    <div class="template-content">
-                        <div class="template-category">Personal Brand</div>
-                        <h3 class="template-title">Mono Studio</h3>
-                        <p class="template-description">
-                            Minimal personal brand template with portfolio, about, and contact sections.
-                        </p>
-                        <div class="template-actions">
-                            <a href="/contact.html?template=mono-studio" class="btn btn-primary btn-small">Use This Template</a>
+                        <div class="template-preview nova-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/nova/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="template-card" data-category="ecommerce" data-animate="fade-up" data-delay="200">
-                    <div class="template-image">
-                        <div class="template-preview ecommerce-template"></div>
-                    </div>
                     <div class="template-content">
-                        <div class="template-category">E-commerce</div>
-                        <h3 class="template-title">Merchant</h3>
+                        <div class="template-header">
+                            <span class="template-category">Startup</span>
+                            <h3 class="template-title">NOVA</h3>
+                        </div>
                         <p class="template-description">
-                            E-commerce template with product catalog, cart functionality, and checkout flow.
+                            Modern startup website with bold design, ideal for tech startups, product launches, and innovative companies.
                         </p>
+                        <div class="template-features">
+                            <span class="template-feature">Bold</span>
+                            <span class="template-feature">Innovative</span>
+                            <span class="template-feature">Conversion-Focused</span>
+                        </div>
                         <div class="template-actions">
-                            <a href="/contact.html?template=merchant" class="btn btn-primary btn-small">Use This Template</a>
+                            <a href="templates/nova/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=nova" class="btn btn-primary btn-small">Get This Website</a>
                         </div>
                     </div>
+                </article>
+
+                <!-- AURA - Portfolio Template -->
+                <article class="template-card" data-category="portfolio" data-animate="fade-up" data-delay="100">
+                    <div class="template-image">
+                        <div class="template-preview aura-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/aura/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
+                        </div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-header">
+                            <span class="template-category">Portfolio</span>
+                            <h3 class="template-title">AURA</h3>
+                        </div>
+                        <p class="template-description">
+                            Creative portfolio website with stunning visuals, perfect for designers, photographers, and creative professionals.
+                        </p>
+                        <div class="template-features">
+                            <span class="template-feature">Creative</span>
+                            <span class="template-feature">Visual Focus</span>
+                            <span class="template-feature">Gallery</span>
+                        </div>
+                        <div class="template-actions">
+                            <a href="templates/aura/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=aura" class="btn btn-primary btn-small">Get This Website</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PULSE - SaaS Template -->
+                <article class="template-card" data-category="saas" data-animate="fade-up" data-delay="200">
+                    <div class="template-image">
+                        <div class="template-preview pulse-preview"></div>
+                        <div class="template-overlay">
+                            <a href="templates/pulse/index.html" class="template-view-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Preview Website
+                            </a>
+                        </div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-header">
+                            <span class="template-category">SaaS</span>
+                            <h3 class="template-title">PULSE</h3>
+                        </div>
+                        <p class="template-description">
+                            Tech-focused SaaS website with data-driven design, ideal for software products, platforms, and tech services.
+                        </p>
+                        <div class="template-features">
+                            <span class="template-feature">Tech-Focused</span>
+                            <span class="template-feature">Data Display</span>
+                            <span class="template-feature">Feature-Rich</span>
+                        </div>
+                        <div class="template-actions">
+                            <a href="templates/pulse/index.html" class="btn btn-secondary btn-small" target="_blank">View Website</a>
+                            <a href="contact.html?template=pulse" class="btn btn-primary btn-small">Get This Website</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div id="noTemplatesMessage" class="no-templates-message" style="display: none;">
+                <div class="no-templates-content">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h3>No templates found</h3>
+                    <p>Try selecting a different category.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Template Info Section -->
-    <section class="template-info section">
+    <section class="template-info section section-dark">
         <div class="container">
-            <div class="template-info-grid">
-                <div class="template-info-card" data-animate="fade-up">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Fully Customizable</h3>
-                    <p>Every template can be customized around your brand, content, and business goals.</p>
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card" data-animate="fade-up">
+                    <div class="info-number">01</div>
+                    <h3>Choose Template</h3>
+                    <p>Browse our collection and select a design that matches your vision.</p>
                 </div>
                 
-                <div class="template-info-card" data-animate="fade-up" data-delay="100">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <p>All templates are built mobile-first and work beautifully on every screen size.</p>
+                <div class="info-card" data-animate="fade-up" data-delay="100">
+                    <div class="info-number">02</div>
+                    <h3>Preview Live</h3>
+                    <p>View the complete working website to experience the design firsthand.</p>
                 </div>
                 
-                <div class="template-info-card" data-animate="fade-up" data-delay="200">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Fast Launch</h3>
-                    <p>Starting with a template reduces development time and gets you online faster.</p>
+                <div class="info-card" data-animate="fade-up" data-delay="200">
+                    <div class="info-number">03</div>
+                    <h3>Get Customized</h3>
+                    <p>We'll customize the template with your content, branding, and features.</p>
+                </div>
+                
+                <div class="info-card" data-animate="fade-up" data-delay="300">
+                    <div class="info-number">04</div>
+                    <h3>Launch Online</h3>
+                    <p>Your website goes live with optional domain and hosting setup.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section section">
         <div class="container">
             <div class="cta-content" data-animate="fade-up">
                 <div class="cta-glow"></div>
-                <h2 class="cta-title">Need something completely custom?</h2>
+                <h2 class="cta-title">Need a custom design?</h2>
                 <p class="cta-description">
-                    HAVEN can design and build a completely unique website tailored to your business.
+                    Looking for something unique? We create completely custom websites tailored to your specific needs.
                 </p>
                 <div class="cta-buttons">
-                    <a href="/contact.html" class="btn btn-primary btn-large">Start a Custom Project</a>
-                    <a href="/services.html" class="btn btn-secondary btn-large">View Services</a>
+                    <a href="contact.html" class="btn btn-primary btn-large">Discuss Custom Project</a>
+                    <a href="services.html" class="btn btn-secondary btn-large">View Services</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">HAVEN</div>
-                    <p class="footer-tagline">Your ideas. A digital place to belong.</p>
+                    <p class="footer-tagline">Your Vision. Our Creation.</p>
+                    <p class="footer-description">
+                        Premium digital experiences, websites, branding and custom digital solutions.
+                    </p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 class="footer-title">Navigation</h4>
                         <ul class="footer-list">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/services.html">Services</a></li>
-                            <li><a href="/templates.html">Templates</a></li>
-                            <li><a href="/pricing.html">Pricing</a></li>
-                            <li><a href="/about.html">About</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="templates.html">Templates</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="services.html#website-design">Website Design</a></li>
+                            <li><a href="services.html#uiux-design">UI/UX Design</a></li>
+                            <li><a href="services.html#branding">Branding</a></li>
+                            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                            <li><a href="services.html#game-development">Game Development</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
                         <h4 class="footer-title">Legal</h4>
                         <ul class="footer-list">
-                            <li><a href="/privacy.html">Privacy Policy</a></li>
-                            <li><a href="/terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
                         <h4 class="footer-title">Contact</h4>
                         <ul class="footer-list">
-                            <li><a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></li>
+                            <li><a href="mailto:hello@haven.pntr.dev">hello@haven.pntr.dev</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2026 HAVEN. All rights reserved.</p>
+                <p class="footer-copyright">&copy; 2024 HAVEN. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     <script src="js/templates-filter.js"></script>
 </body>
 </html>
