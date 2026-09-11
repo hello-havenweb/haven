@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAVEN — Premium Web Design & Development</title>
+    <meta name="description" content="HAVEN designs and builds modern, responsive websites for businesses, creators, startups, and ambitious brands. Your ideas. A digital place to belong.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="HAVEN — Premium Web Design & Development">
+    <meta property="og:description" content="HAVEN designs and builds modern, responsive websites for businesses, creators, startups, and ambitious brands.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="/" class="logo">HAVEN</a>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link active">Home</a></li>
+                        <li><a href="/services.html" class="nav-link">Services</a></li>
+                        <li><a href="/templates.html" class="nav-link">Templates</a></li>
+                        <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="/about.html" class="nav-link">About</a></li>
+                        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="/contact.html" class="btn btn-primary">Start a Project</a>
+                </div>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link">Home</a></li>
+                    <li><a href="/services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="/templates.html" class="mobile-nav-link">Templates</a></li>
+                    <li><a href="/pricing.html" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="/about.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-cta">
+                <a href="/contact.html" class="btn btn-primary btn-block">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient hero-gradient-1"></div>
+            <div class="hero-gradient hero-gradient-2"></div>
+            <div class="hero-noise"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-eyebrow" data-animate="fade-up">
+                        Independent Web Design & Development Studio
+                    </div>
+                    
+                    <h1 class="hero-headline" data-animate="fade-up" data-delay="100">
+                        Websites that make your<br>business feel at home online.
+                    </h1>
+                    
+                    <p class="hero-description" data-animate="fade-up" data-delay="200">
+                        HAVEN designs and builds modern, responsive websites for businesses, creators, startups, and ambitious brands.
+                    </p>
+                    
+                    <div class="hero-cta" data-animate="fade-up" data-delay="300">
+                        <a href="/contact.html" class="btn btn-primary btn-large">Start a Project</a>
+                        <a href="/templates.html" class="btn btn-secondary btn-large">Explore Templates</a>
+                    </div>
+                    
+                    <div class="hero-trust" data-animate="fade-up" data-delay="400">
+                        <span>Thoughtful design</span>
+                        <span class="trust-divider">•</span>
+                        <span>Clean development</span>
+                        <span class="trust-divider">•</span>
+                        <span>Built for every screen</span>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-animate="fade-up" data-delay="200">
+                    <div class="device-mockup">
+                        <div class="desktop-mockup">
+                            <div class="browser-chrome">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-address">havenweb.design</div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mock-interface">
+                                    <div class="mock-header"></div>
+                                    <div class="mock-hero">
+                                        <div class="mock-title"></div>
+                                        <div class="mock-subtitle"></div>
+                                        <div class="mock-buttons">
+                                            <div class="mock-button"></div>
+                                            <div class="mock-button secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-cards">
+                                        <div class="mock-card"></div>
+                                        <div class="mock-card"></div>
+                                        <div class="mock-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-content">
+                                    <div class="mock-mobile-interface">
+                                        <div class="mock-mobile-header"></div>
+                                        <div class="mock-mobile-content">
+                                            <div class="mock-mobile-title"></div>
+                                            <div class="mock-mobile-text"></div>
+                                            <div class="mock-mobile-button"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-1">
+                            <div class="card-icon violet"></div>
+                            <div class="card-lines">
+                                <div class="card-line"></div>
+                                <div class="card-line short"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-2">
+                            <div class="card-icon purple"></div>
+                            <div class="card-lines">
+                                <div class="card-line"></div>
+                                <div class="card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item" data-animate="fade-up">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Responsive by default</span>
+                </div>
+                
+                <div class="trust-divider-vertical"></div>
+                
+                <div class="trust-item" data-animate="fade-up" data-delay="100">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Designed around your goals</span>
+                </div>
+                
+                <div class="trust-divider-vertical"></div>
+                
+                <div class="trust-item" data-animate="fade-up" data-delay="200">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Performance-focused</span>
+                </div>
+                
+                <div class="trust-divider-vertical"></div>
+                
+                <div class="trust-item" data-animate="fade-up" data-delay="300">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Clear communication</span>
+                </div>
+                
+                <div class="trust-divider-vertical"></div>
+                
+                <div class="trust-item" data-animate="fade-up" data-delay="400">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Modern technology</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">Everything your website needs.</h2>
+                <p class="section-description">
+                    From the first visual direction to the final launch, HAVEN creates digital experiences designed around your business.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom Website Design</h3>
+                    <p class="service-description">
+                        Unique interfaces created around your brand, audience, and goals.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-description">
+                        Responsive, modern websites built with clean and scalable technology.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Landing Pages</h3>
+                    <p class="service-description">
+                        Focused pages designed to communicate your offer clearly and drive action.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-number">04</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.9 6 3 6.9 3 8V16C3 17.1 3.9 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Business Websites</h3>
+                    <p class="service-description">
+                        Professional online experiences for businesses ready to grow.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">05</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+                            <path d="M1 1H5L7.68 14.39C7.77 14.83 8.17 15.17 8.62 15.17H19.4C19.85 15.17 20.25 14.83 20.34 14.39L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">E-commerce Websites</h3>
+                    <p class="service-description">
+                        Modern storefront experiences designed for clarity and conversion.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">06</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 4V10H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.49 15C19.9828 16.5205 19.0641 17.8713 17.8309 18.8988C16.5977 19.9263 15.1013 20.5902 13.5108 20.8152C11.9202 21.0401 10.2989 20.8172 8.82375 20.1716C7.34863 19.526 6.08083 18.4832 5.16238 17.1573C4.24393 15.8314 3.71133 14.2769 3.62478 12.6667C3.53823 11.0565 3.90141 9.45518 4.67376 8.03687C5.44611 6.61856 6.59762 5.43638 8.00382 4.62106C9.41002 3.80574 11.0126 3.38774 12.64 3.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 4L12 15L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Website Redesign</h3>
+                    <p class="service-description">
+                        Transform an outdated website into a polished modern experience.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-number">07</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">SEO & Performance</h3>
+                    <p class="service-description">
+                        Strong technical foundations for speed, usability, and search visibility.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">08</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Maintenance & Updates</h3>
+                    <p class="service-description">
+                        Ongoing improvements, content updates, fixes, and support.
+                    </p>
+                    <div class="service-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">Work that speaks for itself.</h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item portfolio-item-large" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual saas-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • SaaS</div>
+                        <h3 class="portfolio-title">CloudVault</h3>
+                        <p class="portfolio-description">
+                            Modern SaaS platform redesign focused on clarity, conversion, and enterprise trust.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual restaurant-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • Restaurant</div>
+                        <h3 class="portfolio-title">Ember & Oak</h3>
+                        <p class="portfolio-description">
+                            Premium dining experience translated into a sophisticated digital presence.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual personal-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • Personal Brand</div>
+                        <h3 class="portfolio-title">Jordan Ellis</h3>
+                        <p class="portfolio-description">
+                            Personal brand website designed to showcase work and build trust.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual studio-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • Creative Studio</div>
+                        <h3 class="portfolio-title">Atelier Design Co.</h3>
+                        <p class="portfolio-description">
+                            Editorial studio website with strong typography and portfolio focus.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item portfolio-item-wide" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual ecommerce-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • E-commerce</div>
+                        <h3 class="portfolio-title">Luma Store</h3>
+                        <p class="portfolio-description">
+                            Clean e-commerce experience with product clarity and conversion design.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-visual professional-concept"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Concept Project • Professional Services</div>
+                        <h3 class="portfolio-title">Sterling Legal</h3>
+                        <p class="portfolio-description">
+                            Professional service website built around trust and clarity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">A clear path from idea to launch.</h2>
+                <p class="section-description">
+                    No confusion, no unnecessary complexity—just a thoughtful process from first conversation to launch.
+                </p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-line"></div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="0">
+                    <div class="process-node">
+                        <div class="process-number">01</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">Discovery</h3>
+                        <p class="process-description">
+                            Understand the business, audience, goals, and requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="100">
+                    <div class="process-node">
+                        <div class="process-number">02</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">Direction</h3>
+                        <p class="process-description">
+                            Establish structure, visual direction, content hierarchy, and user experience.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="200">
+                    <div class="process-node">
+                        <div class="process-number">03</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">UI Design</h3>
+                        <p class="process-description">
+                            Create and refine the visual interface.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="300">
+                    <div class="process-node">
+                        <div class="process-number">04</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">Development</h3>
+                        <p class="process-description">
+                            Build the responsive website and functionality.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="400">
+                    <div class="process-node">
+                        <div class="process-number">05</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">Review</h3>
+                        <p class="process-description">
+                            Refine details based on feedback.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="500">
+                    <div class="process-node">
+                        <div class="process-number">06</div>
+                        <div class="process-glow"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3 class="process-title">Launch</h3>
+                        <p class="process-description">
+                            Prepare the website for deployment and handoff.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why HAVEN Section -->
+    <section class="why-haven section">
+        <div class="container">
+            <div class="why-haven-content">
+                <div class="why-haven-text" data-animate="fade-up">
+                    <h2 class="section-title">Not just another website.</h2>
+                    <div class="why-list">
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Purposeful design</h4>
+                                <p>Every visual decision serves the business goal.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Clear communication</h4>
+                                <p>Know what's happening at every stage.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Mobile-first thinking</h4>
+                                <p>Built to work beautifully on every device.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Modern interfaces</h4>
+                                <p>Contemporary design that feels current.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Fast, optimized websites that load quickly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="why-item">
+                            <svg class="why-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Attention to detail</h4>
+                                <p>Small refinements create the best experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-haven-visual" data-animate="fade-up" data-delay="200">
+                    <div class="abstract-visual">
+                        <div class="abstract-shape shape-1"></div>
+                        <div class="abstract-shape shape-2"></div>
+                        <div class="abstract-shape shape-3"></div>
+                        <div class="abstract-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <div class="cta-glow"></div>
+                <h2 class="cta-title">Have something different in mind?</h2>
+                <p class="cta-description">
+                    Tell HAVEN what you're building and we'll figure out the right direction together.
+                </p>
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-primary btn-large">Start a Project</a>
+                    <a href="mailto:hello.havenweb@gmail.com" class="btn btn-secondary btn-large">hello.havenweb@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">HAVEN</div>
+                    <p class="footer-tagline">Your ideas. A digital place to belong.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/templates.html">Templates</a></li>
+                            <li><a href="/pricing.html">Pricing</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li><a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 HAVEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
