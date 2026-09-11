@@ -13,7 +13,7 @@ const HAVEN_CONFIG = {
         // Template-specific pricing adjustments
         templates: {
             nexus: 0,            // No additional cost (uses base price)
-            vantage: 0,
+            vintage: 0,
             lumiere: 5000,       // +5000 for advanced features
             nova: 0,
             aura: 3000,          // +3000 for portfolio gallery
