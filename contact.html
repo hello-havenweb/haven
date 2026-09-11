@@ -4,68 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — HAVEN</title>
-    <meta name="description" content="Get in touch with HAVEN to discuss your web design and development project. Start building your digital home today.">
+    <meta name="description" content="Get in touch with HAVEN to discuss your website project. Professional web design and development services.">
     
-    <!-- Fonts -->
+    <link rel="canonical" href="https://haven.pntr.dev/contact.html">
+    
+    <meta property="og:title" content="Contact — HAVEN">
+    <meta property="og:description" content="Get in touch to discuss your website project.">
+    <meta property="og:url" content="https://haven.pntr.dev/contact.html">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <div class="header-logo">
-                    <a href="/" class="logo">HAVEN</a>
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">HAVEN</span>
+                    </a>
                 </div>
                 
                 <nav class="nav" id="nav">
                     <ul class="nav-list">
-                        <li><a href="/" class="nav-link">Home</a></li>
-                        <li><a href="/services.html" class="nav-link">Services</a></li>
-                        <li><a href="/templates.html" class="nav-link">Templates</a></li>
-                        <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
-                        <li><a href="/about.html" class="nav-link">About</a></li>
-                        <li><a href="/contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="templates.html" class="nav-link">Templates</a></li>
+                        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
                     </ul>
                 </nav>
                 
                 <div class="header-cta">
-                    <a href="/contact.html" class="btn btn-primary">Start a Project</a>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
                 </div>
                 
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <button class="mobile-toggle" id="mobileToggle">
                     <span class="hamburger"></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-content">
             <nav class="mobile-nav">
                 <ul class="mobile-nav-list">
-                    <li><a href="/" class="mobile-nav-link">Home</a></li>
-                    <li><a href="/services.html" class="mobile-nav-link">Services</a></li>
-                    <li><a href="/templates.html" class="mobile-nav-link">Templates</a></li>
-                    <li><a href="/pricing.html" class="mobile-nav-link">Pricing</a></li>
-                    <li><a href="/about.html" class="mobile-nav-link">About</a></li>
-                    <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="templates.html" class="mobile-nav-link">Templates</a></li>
+                    <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-cta">
-                <a href="/contact.html" class="btn btn-primary btn-block">Start a Project</a>
+                <a href="contact.html" class="btn btn-primary btn-block">Get Started</a>
             </div>
         </div>
     </div>
 
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="hero-background">
             <div class="hero-gradient hero-gradient-1"></div>
@@ -74,103 +79,213 @@
         
         <div class="container">
             <div class="page-hero-content" data-animate="fade-up">
-                <div class="page-eyebrow">Get in touch</div>
-                <h1 class="page-title">Let's build something worth coming home to.</h1>
+                <div class="page-eyebrow">Get In Touch</div>
+                <h1 class="page-title">Let's Create Something Exceptional</h1>
                 <p class="page-description">
-                    Tell me a little about your project, and I'll get back to you with the next steps.
+                    Tell us about your project and we'll provide a tailored solution for your business.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-section section">
         <div class="container">
             <div class="contact-grid">
+                
+                <!-- Contact Form -->
                 <div class="contact-form-wrapper" data-animate="fade-up">
                     <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="form-error" id="nameError"></span>
+                        
+                        <!-- Personal Information -->
+                        <div class="form-section-title">Personal Information</div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="">Select your country</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="US">United States</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="IN">India</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Information -->
+                        <div class="form-section-title">Business Information</div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="businessName">Business / Brand Name *</label>
+                                <input type="text" id="businessName" name="businessName" required placeholder="Your Business Name">
+                                <span class="form-error" id="businessNameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="businessType">Business Type *</label>
+                                <select id="businessType" name="businessType" required>
+                                    <option value="">Select business type</option>
+                                    <option value="gaming">Gaming / Esports</option>
+                                    <option value="business">Corporate / Business</option>
+                                    <option value="restaurant">Restaurant / Food</option>
+                                    <option value="startup">Startup / Tech</option>
+                                    <option value="portfolio">Portfolio / Creative</option>
+                                    <option value="saas">SaaS / Software</option>
+                                    <option value="ecommerce">E-commerce / Retail</option>
+                                    <option value="agency">Agency / Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" id="businessTypeError"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Project Details -->
+                        <div class="form-section-title">Project Details</div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="template">Selected Template</label>
+                                <select id="template" name="template">
+                                    <option value="">No template selected (Custom)</option>
+                                    <option value="nexus">NEXUS - Gaming</option>
+                                    <option value="vantage">VANTAGE - Business</option>
+                                    <option value="lumiere">LUMIÈRE - Restaurant</option>
+                                    <option value="nova">NOVA - Startup</option>
+                                    <option value="aura">AURA - Portfolio</option>
+                                    <option value="pulse">PULSE - SaaS</option>
+                                </select>
+                                <small class="form-hint">Leave as "Custom" if you want a completely unique design</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package">Package</label>
+                                <select id="package" name="package">
+                                    <option value="">Select package</option>
+                                    <option value="website-only">Website Only</option>
+                                    <option value="website-domain">Website + Domain</option>
+                                    <option value="website-hosting">Website + Hosting</option>
+                                    <option value="complete">Complete Package</option>
+                                    <option value="custom">Custom Quote</option>
+                                </select>
+                            </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="form-error" id="emailError"></span>
+                            <label for="pages">Required Pages *</label>
+                            <input type="text" id="pages" name="pages" required placeholder="e.g., Home, About, Services, Contact, Blog">
+                            <small class="form-hint">List the pages you need for your website</small>
+                            <span class="form-error" id="pagesError"></span>
                         </div>
                         
                         <div class="form-group">
-                            <label for="business">Business / Brand</label>
-                            <input type="text" id="business" name="business">
+                            <label for="features">Required Features</label>
+                            <textarea id="features" name="features" rows="3" placeholder="e.g., Contact form, Image gallery, Online booking, Payment integration, User authentication"></textarea>
+                            <small class="form-hint">List any specific features or functionality you need</small>
+                        </div>
+                        
+                        <!-- Domain & Hosting -->
+                        <div class="form-section-title">Domain & Hosting</div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="domainStatus">Domain Status</label>
+                                <select id="domainStatus" name="domainStatus">
+                                    <option value="">Select option</option>
+                                    <option value="have-domain">I have a domain</option>
+                                    <option value="need-domain">I need a domain</option>
+                                    <option value="help-domain">Help me choose</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="hostingStatus">Hosting Status</label>
+                                <select id="hostingStatus" name="hostingStatus">
+                                    <option value="">Select option</option>
+                                    <option value="have-hosting">I have hosting</option>
+                                    <option value="need-hosting">I need hosting</option>
+                                    <option value="help-hosting">Help me choose</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Requirements -->
+                        <div class="form-section-title">Additional Information</div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Description *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, vision, and any specific requirements..."></textarea>
+                            <span class="form-error" id="messageError"></span>
                         </div>
                         
                         <div class="form-group">
-                            <label for="projectType">Project Type</label>
-                            <select id="projectType" name="projectType" required>
-                                <option value="">Select project type</option>
-                                <option value="business-website">Business Website</option>
-                                <option value="landing-page">Landing Page</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="portfolio">Portfolio</option>
-                                <option value="website-redesign">Website Redesign</option>
-                                <option value="custom-website">Custom Website</option>
-                                <option value="other">Other</option>
+                            <label for="timeline">Preferred Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="1-2-weeks">1-2 weeks</option>
+                                <option value="2-4-weeks">2-4 weeks</option>
+                                <option value="1-2-months">1-2 months</option>
+                                <option value="flexible">Flexible</option>
                             </select>
-                            <span class="form-error" id="projectTypeError"></span>
                         </div>
                         
                         <div class="form-group">
                             <label for="budget">Budget Range</label>
                             <select id="budget" name="budget">
                                 <option value="">Select budget range</option>
-                                <option value="under-300">Under $300</option>
-                                <option value="300-600">$300–$600</option>
-                                <option value="600-1000">$600–$1,000</option>
-                                <option value="1000-plus">$1,000+</option>
-                                <option value="not-sure">Not sure yet</option>
+                                <option value="basic">Basic (Template-based)</option>
+                                <option value="standard">Standard (Custom design)</option>
+                                <option value="premium">Premium (Advanced features)</option>
+                                <option value="enterprise">Enterprise (Large project)</option>
+                                <option value="discuss">Prefer to discuss</option>
                             </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="timeline">Timeline</label>
-                            <select id="timeline" name="timeline">
-                                <option value="">Select timeline</option>
-                                <option value="asap">ASAP</option>
-                                <option value="1-2-weeks">1–2 weeks</option>
-                                <option value="2-4-weeks">2–4 weeks</option>
-                                <option value="1-2-months">1–2 months</option>
-                                <option value="flexible">Flexible</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group form-group-full">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
-                            <span class="form-error" id="messageError"></span>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-large btn-block" id="submitBtn">
                             <span class="btn-text">Send Project Inquiry</span>
                             <span class="btn-loading">Sending...</span>
                         </button>
+                        
                     </form>
                     
+                    <!-- Success Message -->
                     <div class="form-success" id="formSuccess">
                         <div class="success-icon">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7088 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3>Thank you — your project inquiry has been received.</h3>
-                        <p>HAVEN will be in touch soon.</p>
+                        <h3>Thank You!</h3>
+                        <p>Your project inquiry has been received. We'll review your requirements and get back to you within 24 hours.</p>
                         <p class="success-email">
-                            Or email directly: <a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a>
+                            You can also reach us directly at <a href="mailto:hello@haven.pntr.dev">hello@haven.pntr.dev</a>
                         </p>
                     </div>
                     
+                    <!-- Error Message -->
                     <div class="form-error-message" id="formError">
                         <div class="error-icon">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,112 +294,127 @@
                                 <circle cx="12" cy="16" r="0.5" fill="currentColor" stroke="currentColor"/>
                             </svg>
                         </div>
-                        <h3>Something went wrong.</h3>
-                        <p>Please try again or email directly at <a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></p>
+                        <h3>Something went wrong</h3>
+                        <p>Please try again or contact us directly at <a href="mailto:hello@haven.pntr.dev">hello@haven.pntr.dev</a></p>
                     </div>
                 </div>
                 
+                <!-- Contact Info Sidebar -->
                 <div class="contact-info" data-animate="fade-up" data-delay="200">
                     <div class="contact-info-card">
-                        <h3>Direct Contact</h3>
-                        <p>Prefer to reach out directly?</p>
-                        <a href="mailto:hello.havenweb@gmail.com" class="contact-email">
+                        <div class="info-icon">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
                             </svg>
-                            hello.havenweb@gmail.com
-                        </a>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:hello@haven.pntr.dev" class="contact-link">hello@haven.pntr.dev</a>
+                        <p>Prefer email? Send us a direct message anytime.</p>
                     </div>
                     
                     <div class="contact-info-card">
-                        <h3>What to expect</h3>
-                        <ul class="expect-list">
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Response within 24-48 hours</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Initial project discussion</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Custom proposal and timeline</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Clear next steps</span>
-                            </li>
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Response Time</h3>
+                        <p>We typically respond within 24 hours on business days.</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>What Happens Next?</h3>
+                        <ul class="info-steps">
+                            <li>We review your requirements</li>
+                            <li>Schedule a consultation call</li>
+                            <li>Provide detailed quote</li>
+                            <li>Start building your website</li>
                         </ul>
                     </div>
                     
                     <div class="contact-info-card">
-                        <h3>Common questions</h3>
-                        <p>Most projects are quoted based on scope and requirements.</p>
-                        <p>Timeline typically ranges from 1-6 weeks depending on complexity.</p>
-                        <a href="/pricing.html" class="contact-link">View pricing guide →</a>
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Not Sure Where to Start?</h3>
+                        <p>No problem! Just tell us about your business and we'll guide you through the process.</p>
+                        <a href="templates.html" class="btn btn-secondary btn-small btn-block">Browse Templates</a>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">HAVEN</div>
-                    <p class="footer-tagline">Your ideas. A digital place to belong.</p>
+                    <p class="footer-tagline">Your Vision. Our Creation.</p>
+                    <p class="footer-description">
+                        Premium digital experiences, websites, branding and custom digital solutions.
+                    </p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 class="footer-title">Navigation</h4>
                         <ul class="footer-list">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/services.html">Services</a></li>
-                            <li><a href="/templates.html">Templates</a></li>
-                            <li><a href="/pricing.html">Pricing</a></li>
-                            <li><a href="/about.html">About</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="templates.html">Templates</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="services.html#website-design">Website Design</a></li>
+                            <li><a href="services.html#uiux-design">UI/UX Design</a></li>
+                            <li><a href="services.html#branding">Branding</a></li>
+                            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                            <li><a href="services.html#game-development">Game Development</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
                         <h4 class="footer-title">Legal</h4>
                         <ul class="footer-list">
-                            <li><a href="/privacy.html">Privacy Policy</a></li>
-                            <li><a href="/terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
                         <h4 class="footer-title">Contact</h4>
                         <ul class="footer-list">
-                            <li><a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></li>
+                            <li><a href="mailto:hello@haven.pntr.dev">hello@haven.pntr.dev</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2026 HAVEN. All rights reserved.</p>
+                <p class="footer-copyright">&copy; 2024 HAVEN. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script type="module" src="js/contact-form.js"></script>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
