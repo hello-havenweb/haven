@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates — HAVEN</title>
+    <meta name="description" content="Choose from professionally designed website templates by HAVEN. Start with a polished foundation and customize it around your business.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="/" class="logo">HAVEN</a>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/services.html" class="nav-link">Services</a></li>
+                        <li><a href="/templates.html" class="nav-link active">Templates</a></li>
+                        <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="/about.html" class="nav-link">About</a></li>
+                        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="/contact.html" class="btn btn-primary">Start a Project</a>
+                </div>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link">Home</a></li>
+                    <li><a href="/services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="/templates.html" class="mobile-nav-link">Templates</a></li>
+                    <li><a href="/pricing.html" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="/about.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-cta">
+                <a href="/contact.html" class="btn btn-primary btn-block">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-gradient hero-gradient-1"></div>
+            <div class="hero-gradient hero-gradient-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="page-hero-content" data-animate="fade-up">
+                <div class="page-eyebrow">Professional Website Templates</div>
+                <h1 class="page-title">Start with a template. Make it yours.</h1>
+                <p class="page-description">
+                    Choose a polished starting point and customize it around your business.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Filter -->
+    <section class="template-filter section-small">
+        <div class="container">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-category="all">All</button>
+                <button class="filter-tab" data-category="business">Business</button>
+                <button class="filter-tab" data-category="portfolio">Portfolio</button>
+                <button class="filter-tab" data-category="agency">Agency</button>
+                <button class="filter-tab" data-category="restaurant">Restaurant</button>
+                <button class="filter-tab" data-category="saas">SaaS</button>
+                <button class="filter-tab" data-category="personal">Personal Brand</button>
+                <button class="filter-tab" data-category="creative">Creative</button>
+                <button class="filter-tab" data-category="ecommerce">E-commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Grid -->
+    <section class="templates-grid section">
+        <div class="container">
+            <div class="templates-container" id="templatesContainer">
+                <div class="template-card" data-category="business" data-animate="fade-up">
+                    <div class="template-image">
+                        <div class="template-preview business-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Business</div>
+                        <h3 class="template-title">HAVEN Business</h3>
+                        <p class="template-description">
+                            Professional business website template with service pages, contact forms, and modern design.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=haven-business" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="portfolio" data-animate="fade-up" data-delay="100">
+                    <div class="template-image">
+                        <div class="template-preview portfolio-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Portfolio</div>
+                        <h3 class="template-title">Northline</h3>
+                        <p class="template-description">
+                            Clean portfolio template with project showcase, about section, and contact integration.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=northline" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="agency" data-animate="fade-up" data-delay="200">
+                    <div class="template-image">
+                        <div class="template-preview agency-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Agency</div>
+                        <h3 class="template-title">Forma</h3>
+                        <p class="template-description">
+                            Modern agency template with service presentation, case studies, and team profiles.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=forma" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="saas" data-animate="fade-up">
+                    <div class="template-image">
+                        <div class="template-preview saas-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">SaaS</div>
+                        <h3 class="template-title">Luma</h3>
+                        <p class="template-description">
+                            SaaS-focused template with feature sections, pricing tables, and conversion design.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=luma" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="creative" data-animate="fade-up" data-delay="100">
+                    <div class="template-image">
+                        <div class="template-preview creative-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Creative</div>
+                        <h3 class="template-title">Atelier</h3>
+                        <p class="template-description">
+                            Creative studio template with bold typography and editorial layout design.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=atelier" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="restaurant" data-animate="fade-up" data-delay="200">
+                    <div class="template-image">
+                        <div class="template-preview restaurant-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Restaurant</div>
+                        <h3 class="template-title">Table & Co.</h3>
+                        <p class="template-description">
+                            Restaurant template with menu presentation, reservation system, and location details.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=table-co" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="saas" data-animate="fade-up">
+                    <div class="template-image">
+                        <div class="template-preview vertex-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">SaaS</div>
+                        <h3 class="template-title">Vertex</h3>
+                        <p class="template-description">
+                            Tech-focused SaaS template with integrations showcase and product demonstration.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=vertex" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="personal" data-animate="fade-up" data-delay="100">
+                    <div class="template-image">
+                        <div class="template-preview personal-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">Personal Brand</div>
+                        <h3 class="template-title">Mono Studio</h3>
+                        <p class="template-description">
+                            Minimal personal brand template with portfolio, about, and contact sections.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=mono-studio" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-category="ecommerce" data-animate="fade-up" data-delay="200">
+                    <div class="template-image">
+                        <div class="template-preview ecommerce-template"></div>
+                    </div>
+                    <div class="template-content">
+                        <div class="template-category">E-commerce</div>
+                        <h3 class="template-title">Merchant</h3>
+                        <p class="template-description">
+                            E-commerce template with product catalog, cart functionality, and checkout flow.
+                        </p>
+                        <div class="template-actions">
+                            <a href="/contact.html?template=merchant" class="btn btn-primary btn-small">Use This Template</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Info Section -->
+    <section class="template-info section">
+        <div class="container">
+            <div class="template-info-grid">
+                <div class="template-info-card" data-animate="fade-up">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Every template can be customized around your brand, content, and business goals.</p>
+                </div>
+                
+                <div class="template-info-card" data-animate="fade-up" data-delay="100">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 21H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>All templates are built mobile-first and work beautifully on every screen size.</p>
+                </div>
+                
+                <div class="template-info-card" data-animate="fade-up" data-delay="200">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Fast Launch</h3>
+                    <p>Starting with a template reduces development time and gets you online faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <div class="cta-glow"></div>
+                <h2 class="cta-title">Need something completely custom?</h2>
+                <p class="cta-description">
+                    HAVEN can design and build a completely unique website tailored to your business.
+                </p>
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-primary btn-large">Start a Custom Project</a>
+                    <a href="/services.html" class="btn btn-secondary btn-large">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">HAVEN</div>
+                    <p class="footer-tagline">Your ideas. A digital place to belong.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/templates.html">Templates</a></li>
+                            <li><a href="/pricing.html">Pricing</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li><a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 HAVEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/templates-filter.js"></script>
+</body>
+</html>
