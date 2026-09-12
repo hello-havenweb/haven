@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing — HAVEN</title>
-    <meta name="description" content="Transparent pricing for premium website design and development. Choose from flexible packages with optional domain and hosting.">
+    <meta name="description" content="Transparent pricing for premium website design and development services.">
     
     <link rel="canonical" href="https://haven.pntr.dev/pricing.html">
-    
-    <meta property="og:title" content="Pricing — HAVEN">
-    <meta property="og:description" content="Transparent pricing for premium website design and development services.">
-    <meta property="og:url" content="https://haven.pntr.dev/pricing.html">
     
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     
@@ -18,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- FIXED: Correct CSS paths -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -80,44 +77,29 @@
         <div class="container">
             <div class="page-hero-content" data-animate="fade-up">
                 <div class="page-eyebrow">Transparent Pricing</div>
-                <h1 class="page-title">Flexible Packages for Every Need</h1>
+                <h1 class="page-title">Simple, Clear Pricing</h1>
                 <p class="page-description">
-                    Choose the perfect package for your business. All prices include professional design, development, and support.
+                    Professional website design and development with transparent pricing.
                 </p>
-                
-                <div class="currency-selector" id="currencySelector">
-                    <label for="currencySelect">Currency:</label>
-                    <select id="currencySelect" class="currency-select">
-                        <option value="PKR">PKR - Pakistani Rupee</option>
-                        <option value="USD">USD - US Dollar</option>
-                        <option value="EUR">EUR - Euro</option>
-                        <option value="GBP">GBP - British Pound</option>
-                        <option value="AED">AED - UAE Dirham</option>
-                        <option value="SAR">SAR - Saudi Riyal</option>
-                    </select>
-                </div>
             </div>
         </div>
     </section>
 
     <section class="pricing-section section">
         <div class="container">
-            <div class="pricing-grid" id="pricingGrid">
+            <div class="pricing-grid">
                 
-                <!-- Website Only Package -->
                 <div class="pricing-card" data-animate="fade-up">
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Website Only</h3>
+                        <h3 class="pricing-name">Starter</h3>
                         <div class="pricing-price">
                             <span class="price-label">Starting from</span>
-                            <span class="price-amount" data-package="website-only" id="priceWebsiteOnly">
-                                <span class="loading-price">Loading...</span>
-                            </span>
+                            <span class="price-amount">$299</span>
                         </div>
                     </div>
                     
                     <p class="pricing-description">
-                        Professional website design and development. You provide your own domain and hosting.
+                        Perfect for small businesses and personal projects.
                     </p>
                     
                     <ul class="pricing-features">
@@ -125,116 +107,43 @@
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Professional Website Design</span>
+                            <span>Up to 5 pages</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Responsive Development</span>
+                            <span>Responsive design</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Mobile Optimization</span>
+                            <span>Contact form</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>SEO Ready Structure</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Contact Forms</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Source Code Delivery</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Deployment Guidance</span>
+                            <span>SEO ready</span>
                         </li>
                     </ul>
                     
-                    <a href="contact.html?package=website-only" class="btn btn-secondary btn-block">Get Started</a>
+                    <a href="contact.html?package=starter" class="btn btn-secondary btn-block">Get Started</a>
                 </div>
 
-                <!-- Website + Domain Package -->
-                <div class="pricing-card" data-animate="fade-up" data-delay="100">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Website + Domain</h3>
-                        <div class="pricing-price">
-                            <span class="price-label">Starting from</span>
-                            <span class="price-amount" data-package="website-domain" id="priceWebsiteDomain">
-                                <span class="loading-price">Loading...</span>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <p class="pricing-description">
-                        Complete website with domain registration and setup. You provide hosting.
-                    </p>
-                    
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Everything in Website Only</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Domain Registration (.com, .net, etc.)</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Domain Setup & Configuration</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>DNS Configuration</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Professional Email Setup Guidance</span>
-                        </li>
-                    </ul>
-                    
-                    <a href="contact.html?package=website-domain" class="btn btn-secondary btn-block">Get Started</a>
-                </div>
-
-                <!-- Website + Hosting Package (Popular) -->
-                <div class="pricing-card pricing-card-popular" data-animate="fade-up" data-delay="200">
+                <div class="pricing-card pricing-card-popular" data-animate="fade-up" data-delay="100">
                     <div class="pricing-badge">Most Popular</div>
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Website + Hosting</h3>
+                        <h3 class="pricing-name">Professional</h3>
                         <div class="pricing-price">
                             <span class="price-label">Starting from</span>
-                            <span class="price-amount" data-package="website-hosting" id="priceWebsiteHosting">
-                                <span class="loading-price">Loading...</span>
-                            </span>
+                            <span class="price-amount">$599</span>
                         </div>
                     </div>
                     
                     <p class="pricing-description">
-                        Website with managed hosting setup. You provide domain or we can help register one.
+                        For businesses looking for a complete online presence.
                     </p>
                     
                     <ul class="pricing-features">
@@ -242,57 +151,48 @@
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Everything in Website Only</span>
+                            <span>Up to 10 pages</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Annual Hosting Setup</span>
+                            <span>Custom design</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>SSL Certificate Configuration</span>
+                            <span>Advanced features</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Website Deployment</span>
+                            <span>SEO optimization</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Performance Optimization</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Backup Setup</span>
+                            <span>Priority support</span>
                         </li>
                     </ul>
                     
-                    <a href="contact.html?package=website-hosting" class="btn btn-primary btn-block">Get Started</a>
+                    <a href="contact.html?package=professional" class="btn btn-primary btn-block">Get Started</a>
                 </div>
 
-                <!-- Complete Package -->
-                <div class="pricing-card" data-animate="fade-up" data-delay="300">
+                <div class="pricing-card" data-animate="fade-up" data-delay="200">
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Complete Package</h3>
+                        <h3 class="pricing-name">Enterprise</h3>
                         <div class="pricing-price">
                             <span class="price-label">Starting from</span>
-                            <span class="price-amount" data-package="complete" id="priceComplete">
-                                <span class="loading-price">Loading...</span>
-                            </span>
+                            <span class="price-amount">$999</span>
                         </div>
                     </div>
                     
                     <p class="pricing-description">
-                        Everything you need: website, domain registration, and hosting setup. Launch-ready package.
+                        For complex projects requiring advanced functionality.
                     </p>
                     
                     <ul class="pricing-features">
@@ -300,181 +200,37 @@
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Everything in Website + Hosting</span>
+                            <span>Unlimited pages</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Domain Registration</span>
+                            <span>Fully custom design</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Complete DNS Setup</span>
+                            <span>E-commerce integration</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Professional Email Setup</span>
+                            <span>Custom features</span>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Complete Launch Support</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Priority Support</span>
+                            <span>Dedicated support</span>
                         </li>
                     </ul>
                     
-                    <a href="contact.html?package=complete" class="btn btn-secondary btn-block">Get Started</a>
+                    <a href="contact.html?package=enterprise" class="btn btn-secondary btn-block">Contact Us</a>
                 </div>
 
-            </div>
-            
-            <div class="pricing-disclaimer" data-animate="fade-up">
-                <p class="disclaimer-text">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="12" cy="8" r="0.5" fill="currentColor" stroke="currentColor"/>
-                    </svg>
-                    Prices shown are estimated regional pricing. Final pricing may vary based on project requirements, features, selected template, domain extension, and hosting plan. Domain and hosting costs are approximate and depend on chosen providers and extensions.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="domain-hosting-info section section-dark">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <h2 class="section-title">Domain & Hosting</h2>
-                <p class="section-description">
-                    Flexible options to suit your needs. Choose what works best for you.
-                </p>
-            </div>
-            
-            <div class="info-grid">
-                <div class="info-card" data-animate="fade-up">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.9 6 3 6.9 3 8V16C3 17.1 3.9 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Bring Your Own</h3>
-                    <p>Already have a domain and hosting? Perfect! We'll work with your existing setup and deploy your website seamlessly.</p>
-                </div>
-                
-                <div class="info-card" data-animate="fade-up" data-delay="100">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>We'll Handle It</h3>
-                    <p>Don't have domain or hosting? No problem! We can arrange everything through trusted providers like Namecheap, Cloudflare, and Hostinger.</p>
-                </div>
-                
-                <div class="info-card" data-animate="fade-up" data-delay="200">
-                    <div class="info-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Complete Freedom</h3>
-                    <p>Mix and match! Get domain from us and use your hosting, or vice versa. You're always in control of your digital assets.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq-section section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-            </div>
-            
-            <div class="faq-list">
-                <div class="faq-item" data-animate="fade-up">
-                    <button class="faq-question">
-                        <span>What's included in the base website price?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The base price includes professional website design, responsive development, mobile optimization, SEO-ready structure, contact forms, and complete source code delivery with deployment guidance.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item" data-animate="fade-up" data-delay="50">
-                    <button class="faq-question">
-                        <span>How long does it take to build a website?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Timeline depends on complexity and requirements. Template-based websites typically take 1-2 weeks, while fully custom websites take 3-6 weeks. We'll provide a clear timeline during consultation.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item" data-animate="fade-up" data-delay="100">
-                    <button class="faq-question">
-                        <span>Do I need technical knowledge to manage my website?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No technical knowledge required! We provide complete guidance for content updates and basic maintenance. For more complex changes, we offer ongoing support and maintenance packages.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item" data-animate="fade-up" data-delay="150">
-                    <button class="faq-question">
-                        <span>Can I customize a template to match my brand?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! Every template is fully customizable. We'll adapt colors, fonts, layouts, images, and content to perfectly match your brand identity and business needs.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item" data-animate="fade-up" data-delay="200">
-                    <button class="faq-question">
-                        <span>What if I need help after my website launches?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We offer ongoing support and maintenance packages. Whether you need content updates, technical fixes, or feature additions, we're here to help your website grow with your business.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item" data-animate="fade-up" data-delay="250">
-                    <button class="faq-question">
-                        <span>How does payment work?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We typically work with a milestone-based payment structure: initial deposit to begin work, progress payment during development, and final payment upon completion and delivery.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -485,7 +241,7 @@
                 <div class="cta-glow"></div>
                 <h2 class="cta-title">Ready to get started?</h2>
                 <p class="cta-description">
-                    Let's discuss your project and create the perfect solution for your business.
+                    Let's discuss your project and create the perfect solution.
                 </p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
@@ -501,9 +257,6 @@
                 <div class="footer-brand">
                     <div class="footer-logo">HAVEN</div>
                     <p class="footer-tagline">Your Vision. Our Creation.</p>
-                    <p class="footer-description">
-                        Premium digital experiences, websites, branding and custom digital solutions.
-                    </p>
                 </div>
                 
                 <div class="footer-links">
@@ -520,21 +273,10 @@
                     </div>
                     
                     <div class="footer-column">
-                        <h4 class="footer-title">Services</h4>
-                        <ul class="footer-list">
-                            <li><a href="services.html#website-design">Website Design</a></li>
-                            <li><a href="services.html#uiux-design">UI/UX Design</a></li>
-                            <li><a href="services.html#branding">Branding</a></li>
-                            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
-                            <li><a href="services.html#game-development">Game Development</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
                         <h4 class="footer-title">Legal</h4>
                         <ul class="footer-list">
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="terms.html">Terms</a></li>
                         </ul>
                     </div>
                     
@@ -553,8 +295,7 @@
         </div>
     </footer>
 
-    <script src="js/config.js"></script>
-    <script src="main.js"></script>
-    <script src="js/pricing.js"></script>
+    <!-- FIXED: Correct script path -->
+    <script src="js/main.js"></script>
 </body>
-</html>
+    </html>
