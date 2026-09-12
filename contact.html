@@ -508,6 +508,94 @@
     }
 }
 </style>
+
+
+        <!-- FIXED: Correct script paths -->
+    <script src="js/main.js"></script>
     
+    <!-- Template & Package Parameter Detection -->
+    <script>
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const template = urlParams.get('template');
+        const packageParam = urlParams.get('package');
+        
+        // Show selected template notification
+        if (template || packageParam) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                margin-bottom: 2rem;
+                padding: 1.5rem;
+                background: linear-gradient(135deg, rgba(139, 92, 255, 0.1), rgba(166, 108, 255, 0.1));
+                border: 1px solid #8B5CFF;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: #F7F4FF;
+                animation: slideDown 0.5s ease;
+            `;
+            
+            let message = '';
+            if (template) {
+                const templateNames = {
+                    'nexus': 'NEXUS (Gaming)',
+                    'vintage': 'VINTAGE (Business)',
+                    'lumiere': 'LUMIÈRE (Restaurant)',
+                    'nova': 'NOVA (Startup)',
+                    'aura': 'AURA (Portfolio)',
+                    'pulse': 'PULSE (SaaS)'
+                };
+                message = `✓ You're interested in: <strong style="color: #A66CFF;">${templateNames[template.toLowerCase()] || template.toUpperCase()}</strong>`;
+            } else if (packageParam) {
+                message = `✓ Selected package: <strong style="color: #A66CFF;">${packageParam.charAt(0).toUpperCase() + packageParam.slice(1)}</strong>`;
+            }
+            
+            notification.innerHTML = message;
+            
+            const form = document.querySelector('.contact-form') || document.querySelector('form');
+            if (form && form.parentElement) {
+                form.parentElement.insertBefore(notification, form);
+            }
+            
+            // Pre-fill message field
+            const messageField = document.querySelector('#message') || document.querySelector('textarea[name="message"]');
+            if (messageField && !messageField.value) {
+                if (template) {
+                    const templateNames = {
+                        'nexus': 'NEXUS (Gaming)',
+                        'vintage': 'VINTAGE (Business)',
+                        'lumiere': 'LUMIÈRE (Restaurant)',
+                        'nova': 'NOVA (Startup)',
+                        'aura': 'AURA (Portfolio)',
+                        'pulse': 'PULSE (SaaS)'
+                    };
+                    messageField.value = `I'm interested in the ${templateNames[template.toLowerCase()] || template} template.`;
+                } else if (packageParam) {
+                    messageField.value = `I'm interested in the ${packageParam.charAt(0).toUpperCase() + packageParam.slice(1)} package.`;
+                }
+            }
+        }
+        
+        // Add animation CSS
+        if (!document.getElementById('notification-styles')) {
+            const style = document.createElement('style');
+            style.id = 'notification-styles';
+            style.textContent = `
+                @keyframes slideDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    })();
+    </script>
 </body>
 </html>
