@@ -1,0 +1,52 @@
+
+/* HAVEN AI Assistant - floating widget */
+.haven-ai-launcher{
+  position:fixed;right:22px;bottom:22px;z-index:99999;
+  display:flex;align-items:center;gap:9px;padding:13px 18px;
+  border:1px solid rgba(180,130,255,.45);border-radius:999px;
+  background:linear-gradient(135deg,#8b5cff,#a66cff);
+  color:#fff;font:600 14px/1 Inter,Arial,sans-serif;cursor:pointer;
+  box-shadow:0 12px 35px rgba(90,45,180,.38);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.haven-ai-launcher:hover{transform:translateY(-2px);box-shadow:0 16px 42px rgba(90,45,180,.5)}
+.haven-ai-launcher .haven-ai-orb{width:22px;height:22px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(255,255,255,.18)}
+.haven-ai-panel{
+  position:fixed;right:22px;bottom:82px;z-index:100000;width:min(390px,calc(100vw - 28px));
+  height:min(590px,calc(100vh - 110px));display:none;flex-direction:column;overflow:hidden;
+  border:1px solid rgba(180,130,255,.28);border-radius:22px;
+  background:linear-gradient(180deg,rgba(25,18,48,.98),rgba(10,8,24,.99));
+  color:#f6f1ff;box-shadow:0 24px 70px rgba(0,0,0,.55);backdrop-filter:blur(18px);
+  font-family:Inter,Arial,sans-serif;
+}
+.haven-ai-panel.open{display:flex}
+.haven-ai-head{display:flex;align-items:center;justify-content:space-between;padding:16px 17px;
+  border-bottom:1px solid rgba(255,255,255,.09)}
+.haven-ai-brand{display:flex;align-items:center;gap:11px}
+.haven-ai-logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#8b5cff,#a66cff);font-weight:800}
+.haven-ai-name{font-size:15px;font-weight:700}.haven-ai-status{font-size:11px;color:#b9a9d8;margin-top:2px}
+.haven-ai-close{border:0;background:transparent;color:#ddd1ef;font-size:25px;cursor:pointer}
+.haven-ai-messages{flex:1;overflow:auto;padding:17px}
+.haven-ai-msg{max-width:86%;margin:0 0 12px;padding:11px 13px;border-radius:15px;
+  font-size:13.5px;line-height:1.5;white-space:pre-wrap}
+.haven-ai-msg.bot{background:rgba(139,92,255,.12);border:1px solid rgba(139,92,255,.16)}
+.haven-ai-msg.user{margin-left:auto;background:linear-gradient(135deg,#8b5cff,#a66cff);color:white}
+.haven-ai-quick{display:flex;gap:7px;flex-wrap:wrap;padding:0 14px 10px}
+.haven-ai-quick button{border:1px solid rgba(180,130,255,.25);background:rgba(255,255,255,.045);
+  color:#ddd3ec;border-radius:999px;padding:7px 10px;font-size:11px;cursor:pointer}
+.haven-ai-inputbar{display:flex;gap:7px;padding:12px;border-top:1px solid rgba(255,255,255,.09)}
+.haven-ai-input{flex:1;min-width:0;border:1px solid rgba(255,255,255,.12);outline:0;
+  border-radius:13px;padding:11px 12px;background:rgba(255,255,255,.055);color:white;font-size:13px}
+.haven-ai-input::placeholder{color:#9e93b1}
+.haven-ai-action{width:42px;height:42px;border:0;border-radius:13px;cursor:pointer;
+  background:rgba(255,255,255,.07);color:#eee}
+.haven-ai-send{background:linear-gradient(135deg,#8b5cff,#a66cff);font-weight:700}
+.haven-ai-action.listening{background:#e056ff;color:#fff;animation:havenPulse 1s infinite}
+.haven-ai-note{font-size:9px;color:#766b86;text-align:center;padding:0 10px 9px}
+@keyframes havenPulse{50%{transform:scale(1.06);box-shadow:0 0 0 7px rgba(224,86,255,.12)}}
+@media(max-width:600px){
+  .haven-ai-launcher{right:14px;bottom:14px;padding:12px 15px}
+  .haven-ai-panel{right:10px;bottom:72px;width:calc(100vw - 20px);height:min(610px,calc(100vh - 90px));border-radius:19px}
+}
