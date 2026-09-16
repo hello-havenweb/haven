@@ -1,0 +1,60 @@
+<!-- This is a placeholder instruction. In a real implementation, you would -->
+<!-- create and upload the actual PNG files. Here's how to generate them: -->
+
+<!-- For favicon-180.png, create a 180x180 PNG with: -->
+<!-- - Purple gradient background (#9d4edd to #7209b7) -->
+<!-- - White "H" letter centered -->
+<!-- - Professional geometric styling -->
+
+<!-- You can create this using: -->
+<!-- 1. Figma/Adobe XD - Design the H logo and export as PNG -->
+<!-- 2. Python PIL/Pillow - Generate programmatically -->
+<!-- 3. Online favicon generator - Upload the SVG favicon -->
+
+<!-- For GitHub Pages, place these files in the root directory: -->
+<!-- - favicon.svg -->
+<!-- - favicon-180.png -->
+<!-- - favicon-192.png (for PWA) -->
+<!-- - favicon-512.png (for PWA) -->
+
+<!-- Quick Python script to generate favicon-180.png: -->
+<!-- 
+from PIL import Image, ImageDraw
+import colorsys
+
+# Create image
+img = Image.new('RGBA', (180, 180), color=(10, 10, 10, 255))
+draw = ImageDraw.Draw(img)
+
+# Draw gradient background
+for i in range(180):
+    hue = 0.78  # Purple hue
+    sat = 0.80
+    val = 0.65 - (i / 180) * 0.15
+    rgb = colorsys.hsv_to_rgb(hue, sat, val)
+    rgb = tuple(int(c * 255) for c in rgb) + (255,)
+    draw.line([(0, i), (180, i)], fill=rgb)
+
+# Draw white H
+padding = 30
+bar_width = 20
+h_x1 = padding
+h_x2 = padding + bar_width
+h_x3 = 180 - padding - bar_width
+h_x4 = 180 - padding
+h_y1 = padding
+h_y2 = 90 - 5
+h_y3 = 90 + 5
+h_y4 = 180 - padding
+
+white = (255, 255, 255, 255)
+
+# Left bar
+draw.rectangle([h_x1, h_y1, h_x2, h_y4], fill=white)
+# Right bar
+draw.rectangle([h_x3, h_y1, h_x4, h_y4], fill=white)
+# Middle bar
+draw.rectangle([h_x1 + 15, h_y2, h_x4 - 15, h_y3], fill=(199, 125, 255, 255))
+
+img.save('favicon-180.png')
+-->
