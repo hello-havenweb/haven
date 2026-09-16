@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+    <!-- Background -->
+    <defs>
+        <linearGradient id="havenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#9d4edd;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Outer Circle Background -->
+    <circle cx="96" cy="96" r="96" fill="url(#havenGradient)"/>
+    
+    <!-- Inner Dark Background -->
+    <circle cx="96" cy="96" r="88" fill="#0a0a0a"/>
+    
+    <!-- Purple Glow Ring -->
+    <circle cx="96" cy="96" r="88" fill="none" stroke="url(#havenGradient)" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Main Letter H -->
+    <g filter="url(#glow)">
+        <!-- Left vertical bar -->
+        <rect x="50" y="40" width="16" height="112" rx="8" fill="#ffffff"/>
+        
+        <!-- Right vertical bar -->
+        <rect x="126" y="40" width="16" height="112" rx="8" fill="#ffffff"/>
+        
+        <!-- Horizontal bar -->
+        <rect x="50" y="91" width="92" height="10" rx="5" fill="#c77dff"/>
+    </g>
+    
+    <!-- Accent dots -->
+    <circle cx="70" cy="30" r="3" fill="#9d4edd" opacity="0.6"/>
+    <circle cx="162" cy="162" r="3" fill="#9d4edd" opacity="0.6"/>
+</svg>
