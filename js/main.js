@@ -180,6 +180,129 @@
 
     updateActiveNavLink();
 
+
+    // ========================================
+    // HAVEN CREATIVE MICRO-INTERACTIONS
+    // ========================================
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Typewriter hero message
+    const typewriter = document.querySelector('[data-typewriter]');
+    if (typewriter) {
+        const output = typewriter.querySelector('.typewriter-output');
+        const cursor = typewriter.querySelector('.typewriter-cursor');
+        const text = "Welcome to HAVEN. We build premium websites and digital experiences made for modern brands.";
+        let index = 0;
+        const startDelay = 650;
+        const speed = 32;
+
+        function finishTypewriter() {
+            if (output) output.textContent = text;
+            if (cursor) cursor.classList.add('is-hidden');
+        }
+
+        if (reduceMotion) {
+            finishTypewriter();
+        } else {
+            window.setTimeout(function() {
+                const timer = window.setInterval(function() {
+                    if (!output) {
+                        window.clearInterval(timer);
+                        return;
+                    }
+                    output.textContent = text.slice(0, index + 1);
+                    index += 1;
+                    if (index >= text.length) {
+                        window.clearInterval(timer);
+                        if (cursor) cursor.classList.add('is-hidden');
+                    }
+                }, speed);
+            }, startDelay);
+        }
+    }
+
+    // Magnetic CTA — desktop pointer devices only
+    const magneticButtons = document.querySelectorAll('.magnetic-cta');
+    const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+    if (!reduceMotion && finePointer) {
+        magneticButtons.forEach(function(button) {
+            button.addEventListener('pointermove', function(e) {
+                const rect = button.getBoundingClientRect();
+                const x = (e.clientX - (rect.left + rect.width / 2)) / rect.width;
+                const y = (e.clientY - (rect.top + rect.height / 2)) / rect.height;
+
+                button.style.setProperty('--magnetic-x', `${Math.max(-8, Math.min(8, x * 10))}px`);
+                button.style.setProperty('--magnetic-y', `${Math.max(-6, Math.min(6, y * 8))}px`);
+            });
+
+            button.addEventListener('pointerleave', function() {
+                button.style.setProperty('--magnetic-x', '0px');
+                button.style.setProperty('--magnetic-y', '0px');
+            });
+        });
+    }
+
+    // Playful runaway CTA — only on desktop, never for important actions
+    const runawayButton = document.querySelector('.runaway-cta');
+    if (!reduceMotion && finePointer && runawayButton) {
+        runawayButton.addEventListener('pointerenter', function(e) {
+            const rect = runawayButton.getBoundingClientRect();
+            const distanceX = e.clientX - (rect.left + rect.width / 2);
+            const distanceY = e.clientY - (rect.top + rect.height / 2);
+            const directionX = distanceX >= 0 ? -1 : 1;
+            const directionY = distanceY >= 0 ? -1 : 1;
+
+            const moveX = directionX * (18 + Math.random() * 22);
+            const moveY = directionY * (8 + Math.random() * 14);
+
+            runawayButton.classList.add('is-escaping');
+            runawayButton.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            window.setTimeout(function() {
+                runawayButton.classList.remove('is-escaping');
+                runawayButton.style.transform = '';
+            }, 420);
+        });
+    }
+
+    // Copy HAVEN contact email
+    document.querySelectorAll('.copy-email-cta').forEach(function(button) {
+        button.addEventListener('click', async function() {
+            const email = button.getAttribute('data-copy-email');
+            if (!email) return;
+
+            try {
+                await navigator.clipboard.writeText(email);
+                const original = button.innerHTML;
+                button.classList.add('copied');
+                const label = button.querySelector('span');
+                if (label) label.textContent = 'Copied!';
+                window.setTimeout(function() {
+                    button.classList.remove('copied');
+                    button.innerHTML = original;
+                }, 1400);
+            } catch (error) {
+                window.location.href = `mailto:${email}`;
+            }
+        });
+    });
+
+    // AVP cursor awareness
+    const avpCharacter = document.getElementById('avpCharacter');
+    if (!reduceMotion && finePointer && avpCharacter) {
+        window.addEventListener('pointermove', function(e) {
+            const rect = avpCharacter.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const dx = Math.max(-1, Math.min(1, (e.clientX - centerX) / 280));
+            const dy = Math.max(-1, Math.min(1, (e.clientY - centerY) / 260));
+
+            avpCharacter.style.setProperty('--avp-look-x', `${dx * 7}px`);
+            avpCharacter.style.setProperty('--avp-look-y', `${dy * 4}px`);
+        }, { passive: true });
+    }
+
     // ========================================
     // FORM HELPERS
     // ========================================

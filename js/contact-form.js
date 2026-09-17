@@ -22,8 +22,8 @@ import { collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/fir
     // Form fields
     const nameField = document.getElementById('name');
     const emailField = document.getElementById('email');
-    const businessField = document.getElementById('business');
-    const projectTypeField = document.getElementById('projectType');
+    const businessField = document.getElementById('businessName');
+    const projectTypeField = document.getElementById('businessType');
     const budgetField = document.getElementById('budget');
     const timelineField = document.getElementById('timeline');
     const messageField = document.getElementById('message');
@@ -218,6 +218,15 @@ import { collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/fir
             // Submit to Firebase Firestore
             await addDoc(collection(db, 'contactSubmissions'), formData);
 
+            // Success state — let the button visibly complete before hiding the form.
+            submitBtn.classList.remove('loading');
+            submitBtn.classList.add('success');
+            const submitText = submitBtn.querySelector('.btn-text');
+            if (submitText) submitText.textContent = '✓ Sent';
+
+            // Give the button's success animation a brief moment to complete.
+            await new Promise(function(resolve) { window.setTimeout(resolve, 650); });
+
             // Success - hide form and show success message
             contactForm.classList.add('hidden');
             formSuccess.classList.add('show');
@@ -270,6 +279,9 @@ import { collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/fir
         clearAllErrors();
         submitBtn.disabled = false;
         submitBtn.classList.remove('loading');
+        submitBtn.classList.remove('success');
+        const resetText = submitBtn.querySelector('.btn-text');
+        if (resetText) resetText.textContent = 'Send Project Inquiry';
     };
 
     // ========================================

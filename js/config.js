@@ -83,7 +83,7 @@ const HAVEN_CONFIG = {
     
     // Contact Information
     contact: {
-        email: 'hello@haven.pntr.dev',
+        email: 'hello.havenweb@gmail.com',
         website: 'https://haven.pntr.dev'
     },
     
