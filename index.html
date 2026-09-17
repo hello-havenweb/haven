@@ -74,41 +74,71 @@
     </div>
 
     <section class="hero">
-        <div class="hero-background">
+        <div class="hero-background" aria-hidden="true">
             <div class="hero-gradient hero-gradient-1"></div>
             <div class="hero-gradient hero-gradient-2"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-grid"></div>
             <div class="hero-noise"></div>
         </div>
-        
+
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-eyebrow" data-animate="fade-up">
-                        Premium Digital Agency
+                    <div class="hero-eyebrow hero-eyebrow-live" data-animate="fade-up">
+                        <span class="status-dot"></span> Digital experiences, built differently
                     </div>
-                    
-                    <h1 class="hero-headline" data-animate="fade-up" data-delay="100">
-                        Your Vision.<br>Our Creation.
-                    </h1>
-                    
-                    <p class="hero-description" data-animate="fade-up" data-delay="200">
-                        HAVEN creates premium digital experiences. Websites, branding, design, and custom digital solutions built for modern businesses.
+
+                    <p class="hero-intro" data-animate="fade-up" data-delay="50">
+                        Hey there, meet <span>AVP</span>,<br>
+                        HAVEN's Adaptive Virtual Partner
                     </p>
-                    
-                    <div class="hero-cta" data-animate="fade-up" data-delay="300">
-                        <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
-                        <a href="templates.html" class="btn btn-secondary btn-large">Explore Templates</a>
+
+                    <h1 class="hero-headline" data-animate="fade-up" data-delay="100">
+                        Your Vision.<br><span>Our Creation.</span>
+                    </h1>
+
+                    <p class="hero-description hero-typewriter" data-typewriter data-animate="fade-up" data-delay="200">
+                        <span class="typewriter-output"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+                    </p>
+
+                    <div class="hero-pill-actions" data-animate="fade-up" data-delay="300" aria-label="HAVEN actions">
+                        <a href="contact.html" class="haven-pill haven-pill-primary magnetic-cta">Build my website <span aria-hidden="true">↗</span></a>
+                        <a href="templates.html" class="haven-pill haven-pill-light">Explore templates</a>
+                        <a href="pricing.html" class="haven-pill haven-pill-light">See pricing</a>
+                        <a href="services.html" class="haven-pill haven-pill-light runaway-cta">Surprise me</a>
+                        <button type="button" class="haven-pill haven-pill-outline copy-email-cta" data-copy-email="hello.havenweb@gmail.com">
+                            Reach us: <span>hello.havenweb@gmail.com</span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M8 15H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v2"></path></svg>
+                        </button>
                     </div>
                 </div>
-                
+
                 <div class="hero-visual" data-animate="fade-up" data-delay="200">
-                    <div class="device-mockup">
+                    <div class="avp-stage" aria-label="AVP, HAVEN's digital assistant">
+                        <div class="avp-halo"></div>
+                        <div class="avp-character" id="avpCharacter">
+                            <div class="avp-aura"></div>
+                            <div class="avp-head">
+                                <span class="avp-eye avp-eye-left"></span>
+                                <span class="avp-eye avp-eye-right"></span>
+                                <span class="avp-face-line"></span>
+                            </div>
+                            <div class="avp-body">
+                                <div class="avp-core"></div>
+                                <div class="avp-arm avp-arm-left"></div>
+                                <div class="avp-arm avp-arm-right"></div>
+                            </div>
+                            <div class="avp-label"><strong>AVP</strong><span>HAVEN assistant</span></div>
+                        </div>
+                    </div>
+
+                    <div class="device-mockup hero-device-secondary">
                         <div class="desktop-mockup">
                             <div class="browser-chrome">
                                 <div class="browser-dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span></span><span></span><span></span>
                                 </div>
                                 <div class="browser-address">haven.pntr.dev</div>
                             </div>
@@ -246,7 +276,7 @@
                     <div class="footer-column">
                         <h4 class="footer-title">Contact</h4>
                         <ul class="footer-list">
-                            <li><a href="mailto:hello.havenweb@gmail.com">hello@haven.pntr.dev</a></li>
+                            <li><a href="mailto:hello.havenweb@gmail.com">hello.havenweb@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
