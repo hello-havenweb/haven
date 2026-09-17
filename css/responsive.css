@@ -1231,3 +1231,146 @@
         text-decoration: underline;
     }
 }
+
+
+/* ========================================
+   HAVEN CREATIVE INTERACTIONS — RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .hero-text {
+        max-width: 760px;
+    }
+
+    .hero-visual {
+        position: absolute;
+        inset: auto 0 0;
+        height: 52vh;
+        min-height: 360px;
+        opacity: 0.52;
+        pointer-events: none;
+    }
+
+    .avp-stage {
+        top: 4%;
+        right: 5%;
+        width: 46%;
+        height: 62%;
+    }
+
+    .hero-device-secondary {
+        right: -13%;
+        bottom: -6%;
+        width: 68%;
+        height: 58%;
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 100svh;
+        padding: 7.5rem 0 3.5rem;
+        align-items: flex-end;
+    }
+
+    .hero-content {
+        min-height: calc(100svh - 11rem);
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-intro {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(2.35rem, 12vw, 4rem);
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-typewriter {
+        min-height: 4.5em;
+    }
+
+    .hero-pill-actions {
+        gap: 0.35rem;
+    }
+
+    .haven-pill {
+        min-height: 40px;
+        padding: 0.45rem 0.82rem;
+        font-size: 0.78rem;
+    }
+
+    .haven-pill-outline {
+        white-space: normal;
+        text-align: left;
+    }
+
+    .haven-pill-outline span {
+        overflow-wrap: anywhere;
+    }
+
+    .hero-visual {
+        height: 46vh;
+        min-height: 290px;
+        opacity: 0.28;
+    }
+
+    .avp-stage {
+        top: 0;
+        right: 1%;
+        width: 56%;
+        height: 58%;
+    }
+
+    .avp-character {
+        transform: scale(0.78);
+        transform-origin: center;
+    }
+
+    .hero-device-secondary {
+        right: -24%;
+        bottom: -9%;
+        width: 75%;
+        height: 55%;
+    }
+
+    .hero-grid {
+        background-size: 48px 48px;
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-grid,
+    .hero-orb,
+    .status-dot,
+    .avp-character,
+    .avp-halo {
+        animation: none !important;
+    }
+
+    .magnetic-cta,
+    .runaway-cta.is-escaping {
+        transform: none !important;
+    }
+}
